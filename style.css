@@ -1,0 +1,44 @@
+
+:root{
+  --bg:#fffdfa;
+  --ink:#12251a;
+  --rose:#e79ab2;
+  --green:#6bbf8f;
+  --muted:#5e6a63;
+  --card:#ffffff;
+  --shadow:0 10px 25px rgba(0,0,0,.08);
+  --radius:20px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+  color:var(--ink);
+  background: radial-gradient(1200px 800px at 80% -10%, rgba(231,154,178,.18) 0%, var(--bg) 45%, rgba(107,191,143,.16) 100%);
+  display:flex; align-items:center; justify-content:center; padding:24px;
+}
+.card{
+  width: min(560px, 92vw);
+  background:var(--card);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:28px 22px;
+  text-align:center;
+  position:relative; overflow:hidden;
+}
+.badge{ display:inline-block; padding:6px 12px; border-radius:999px; background:rgba(231,154,178,.12); color:var(--rose); font-weight:800; letter-spacing:.5px; font-size:12px; text-transform:uppercase; }
+h1{ font-family: "Cormorant Garamond", Georgia, serif; font-weight:600; letter-spacing:.3px; font-size: clamp(26px, 5vw, 38px); margin:6px 0 6px;}
+.subtitle{ color:var(--muted); margin-bottom:22px; }
+.gold{ color:var(--rose); font-weight:600; }
+.field{ display:flex; gap:8px; justify-content:center; align-items:center; margin:18px auto 8px; width:100%;}
+input[type="text"]{ flex:1; min-width:0; padding:14px 14px; border-radius:14px; border:1px solid #e5e2dc; outline:none; font-size:16px; background:#fff;}
+input[type="text"]:focus{ border-color:var(--rose); box-shadow:0 0 0 4px rgba(231,154,178,.25);}
+button{ padding:14px 20px; border-radius:14px; border:none; background:var(--green); color:white; font-weight:700; cursor:pointer; transition:transform .05s ease, opacity .2s ease; box-shadow:0 6px 14px rgba(107,191,143,.28);}
+button:active{ transform:translateY(1px); }
+.helper{ font-size:14px; color:var(--muted); margin-top:6px;}
+.err{ color:#8b2c2c; margin-top:10px; font-weight:600;}
+.num{ font-size: clamp(56px, 14vw, 120px); line-height:1; margin:8px 0 8px; font-family: "Cormorant Garamond", Georgia, serif;}
+.footer{ margin-top:18px; font-size:12px; color:var(--muted);} 
+.back{ appearance:none; background:transparent; border:none; color:var(--rose); cursor:pointer; font-weight:700; text-decoration:underline; margin-top:12px;}
+.ring{ position:absolute; inset:-120px auto auto -120px; width:240px; height:240px; border-radius:50%; border:10px solid #e9dccb; opacity:.6;}
+a.btn{display:inline-block; padding:10px 16px; border-radius:12px; text-decoration:none; background:var(--green); color:#fff; font-weight:700;}
