@@ -42,3 +42,22 @@ button:active{ transform:translateY(1px); }
 .back{ appearance:none; background:transparent; border:none; color:var(--rose); cursor:pointer; font-weight:700; text-decoration:underline; margin-top:12px;}
 .ring{ position:absolute; inset:-120px auto auto -120px; width:240px; height:240px; border-radius:50%; border:10px solid #e9dccb; opacity:.6;}
 a.btn{display:inline-block; padding:10px 16px; border-radius:12px; text-decoration:none; background:var(--green); color:#fff; font-weight:700;}
+/* Fade + slide au chargement de chaque page */
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(10px) scale(.98); filter: blur(3px); }
+  to   { opacity: 1; transform: none; filter: none; }
+}
+.card { animation: fadeSlideIn .45s cubic-bezier(.2,.6,.2,1) both; }
+
+/* Micro-interactions */
+button { transition: transform .12s, box-shadow .2s, opacity .2s; }
+button:hover { transform: translateY(-2px); box-shadow: 0 14px 32px rgba(107,191,143,.35); }
+:focus-visible { outline: 3px solid rgba(231,154,178,.45); outline-offset: 3px; border-radius: 12px; }
+
+/* Petit effet sur le numéro de table */
+.num { animation: popIn .4s .2s both; }
+@keyframes popIn {
+  from { transform: scale(.9); opacity: 0; }
+  to   { transform: scale(1);  opacity: 1; }
+}
+
