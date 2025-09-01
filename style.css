@@ -61,3 +61,13 @@ button:hover { transform: translateY(-2px); box-shadow: 0 14px 32px rgba(107,191
   to   { transform: scale(1);  opacity: 1; }
 }
 
+#guest {
+  position: relative;
+  animation: nameGlow .6s .15s both;
+}
+@keyframes nameGlow {
+  0% { text-shadow: none; opacity: 0; transform: translateY(6px); }
+  100% { opacity: 1; transform: none; text-shadow: 0 6px 20px rgba(231,154,178,.45); }
+}
+
+
