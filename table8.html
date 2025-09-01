@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mariage de Yvana — Table 8</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <section class="card">
+      <div class="badge">Votre table</div>
+      <h1>Bienvenue <span class="gold" id="guest"></span> !</h1>
+      <div class="num">Table 8</div>
+
+      <p class="subtitle">Nous vous souhaitons une merveilleuse soirée ✨</p>
+      <a class="btn" href="index.html">⟵ Revenir à l’accueil</a>
+      <div class="footer">(Astuce : ajoutez cette page à vos favoris si besoin.)</div>
+    </section>
+  </div>
+  <script>
+    const p = new URLSearchParams(location.search);
+    const name = p.get('name') || '';
+    document.getElementById('guest').textContent = name;
+  </script>
+</body>
+</html>
