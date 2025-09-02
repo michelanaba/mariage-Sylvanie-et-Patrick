@@ -90,6 +90,34 @@ body.fade-in {
 ::view-transition-new(root) {
   animation-duration: .5s;
 }
+.welcome {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 500;
+  font-size: clamp(28px, 6vw, 44px);
+  line-height: 1.3;
+  color: var(--ink);
+  margin: 0.5em 0;
+}
+
+.welcome .names {
+  display: inline-block;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 600;
+  font-size: clamp(36px, 7vw, 56px);
+  color: var(--rose);
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.welcome .and {
+  font-size: 0.7em;
+  color: var(--green);
+  font-style: italic;
+  margin: 0 0.2em;
+  position: relative;
+  top: -0.2em;
+}
+
 
 
 
