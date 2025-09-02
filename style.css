@@ -76,5 +76,17 @@ button:hover { transform: translateY(-2px); box-shadow: 0 14px 32px rgba(107,191
   border-radius:50%; animation: twinkle 1.4s ease-in-out infinite alternate;
 }
 @keyframes twinkle { from { transform: scale(.8); opacity: .5; } to { transform: scale(1.2); opacity: 1; } }
+/* Transition globale */
+body {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+body.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 
