@@ -86,5 +86,10 @@ body.fade-in {
   opacity: 1;
   transform: scale(1);
 }
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: .5s;
+}
+
 
 
